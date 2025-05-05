@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:17.4-alpine
+    ports:
+      - "5432:5432"
+    env_file:
+      - .env
+    platform: linux/amd64
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
