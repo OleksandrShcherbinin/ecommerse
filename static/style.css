@@ -8,23 +8,23 @@
     Version: 1.0
 
 -----------------------------------------------------------------------------------
-    
+
     CSS INDEX
     ===================
-	
+
     1. Theme Default CSS (body, link color, section etc)
     2. HEADER-AREA
       2.1  Header-Top
       2.2  Header-Middle
-      2.3  Mainmenu-Area 
-      2.4  Mainmenu-Dropdown 
-    3.  Categories Menu 
-    4. Slider 
+      2.3  Mainmenu-Area
+      2.4  Mainmenu-Dropdown
+    3.  Categories Menu
+    4. Slider
     5. Hot-Deals
     6. Bestseller-Area
     7. Sidebar-Banner
     8. Shop-Blog-Area
-    9. Product-Banner 
+    9. Product-Banner
     10. Product-Area
     11. Small-Product-Area
     12. Brand-Logo
@@ -36,7 +36,7 @@
     18. Product-area
     19. Shop Page
     20. Shop-Filter
-    21. Product-Details Page 
+    21. Product-Details Page
     22. Cart Page
     23. Contact-Page
     24. Wishlist-Page
@@ -165,14 +165,14 @@ i.fa.fa-shopping-cart {
     visibility: hidden;
     overflow: hidden;
     opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; 
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 .tab-content .tab-pane.active {
     height: auto;
     visibility: visible;
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    overflow: visible; 
+    overflow: visible;
 }
 .form-horizontal .control-label {
 	padding-top: 7px;
@@ -623,7 +623,7 @@ p.welcome-msg {
   background: #26ACCE;
 }
 /*----------------------------------------*/
-/*  2.3  Mainmenu-Area 
+/*  2.3  Mainmenu-Area
 /*----------------------------------------*/
 .mainmenu-area {
   background: #474747 none repeat scroll 0 0;
@@ -675,7 +675,7 @@ p.welcome-msg {
   right: 22px;
   transition: all 0.3s ease-out 0s;
 }
-.mainmenu ul li.hot:hover a::before {top: -38px;} 
+.mainmenu ul li.hot:hover a::before {top: -38px;}
 .mainmenu ul li.hot:hover a::after {top: -22px;}
 .mainmenu ul li.new a::before {
   background: #A8D255 none repeat scroll 0 0;
@@ -702,10 +702,10 @@ p.welcome-msg {
   right: 22px;
   transition: all 0.3s ease-out 0s;
 }
-.mainmenu ul li.new:hover a::before {top: -38px;} 
+.mainmenu ul li.new:hover a::before {top: -38px;}
 .mainmenu ul li.new:hover a::after {top: -22px;}
 /*----------------------------------------*/
-/*  2.4  Mainmenu-Dropdown 
+/*  2.4  Mainmenu-Dropdown
 /*----------------------------------------*/
 .mainmenu ul li ul {
   background: #fff none repeat scroll 0 0;
@@ -745,7 +745,7 @@ p.welcome-msg {
 .mainmenu ul li:hover ul li a{color:#444;}
 .mainmenu ul li:hover ul li a:hover{color:#26acca;margin-left:5px}
 /*----------------------------------------*/
-/*  3.  Categories Menu  
+/*  3.  Categories Menu
 /*----------------------------------------*/
 .category-heading {
     overflow: hidden;
@@ -996,7 +996,7 @@ p.welcome-msg {
   width: 48%;
 }
 /*----------------------------------------*/
-/*  4. Slider 
+/*  4. Slider
 /*----------------------------------------*/
 .preview-1 .nivo-caption {
   font-family: 'Raleway', sans-serif;
@@ -1061,7 +1061,7 @@ p.welcome-msg {
   font-size: 16px;
   font-weight: bold;
   position: absolute;
-  top: 41%; 
+  top: 41%;
   text-align: center;
   width: 100%;
 }
@@ -1170,7 +1170,7 @@ p.welcome-msg {
   animation-play-state: paused;
 }
 /*----------------------------------------*/
-/*  5.  Hot-Deals 
+/*  5.  Hot-Deals
 /*----------------------------------------*/
 .hot-deals-area {
   margin-top: 22px;
@@ -1203,7 +1203,7 @@ h3.title-group.border-red {
 }
 .cdown {
   float:left;
-  width:25%;  
+  width:25%;
   border-right: 1px solid #FABDC5;
   background: #ed7987 none repeat scroll 0 0;color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -1274,7 +1274,7 @@ span.rating i {
   box-shadow: 0 2px 7px -1px #555 inset;
 }
 /*----------------------------------------*/
-/*  6. Bestseller-Area 
+/*  6. Bestseller-Area
 /*----------------------------------------*/
 .carosel-navigation .owl-theme .owl-controls .owl-buttons div {
   background: rgba(71, 71, 71, 0.9) none repeat scroll 0 0;
@@ -1351,7 +1351,7 @@ a.posts-read-more:hover {
   padding-bottom: 30px;
 }
 /*----------------------------------------*/
-/*  9. Product-Banner 
+/*  9. Product-Banner
 /*----------------------------------------*/
 .product-banner.home1-banner {
   padding-top: 20px;
@@ -1366,7 +1366,7 @@ a.posts-read-more:hover {
   border: 1px solid #e3e3e3;
   position: relative;
   overflow: hidden;
-  margin: 30px 0 0;  
+  margin: 30px 0 0;
 }
 .single-product-banner img {
   width: 100%;
@@ -1411,7 +1411,7 @@ a.posts-read-more:hover {
   animation: 0.3s linear 0s alternate none 1 running fadeInRight;
 }
 /*----------------------------------------*/
-/*  10. Product-Area 
+/*  10. Product-Area
 /*----------------------------------------*/
 .product-area {
   margin-top: 32px;
@@ -1513,7 +1513,7 @@ a.posts-read-more:hover {
 	position: absolute;
 	right: 0;
 	text-align: center;
-	transition: all 0.5s ease 0s;	
+	transition: all 0.5s ease 0s;
 	padding: 0 0 25px;
 	transform: scale(.8);
 }
@@ -1612,7 +1612,7 @@ a.posts-read-more:hover {
 }
 .tooltip{background:transparent !important;}
 /*----------------------------------------*/
-/*  11. Small-Product-Area 
+/*  11. Small-Product-Area
 /*----------------------------------------*/
 .small-product-area {
   margin-top: 30px;
@@ -1758,7 +1758,7 @@ a.posts-read-more:hover {
 .footer {
   background: #181818 none repeat scroll 0 0;
   padding: 50px 0 38px;
-} 
+}
 .footer-title {border-bottom: 1px solid #303030;}
 .footer-title h5 {
   color: #fff;
@@ -1810,7 +1810,7 @@ ul.footer-content.box-information li a {
   background: #111 none repeat scroll 0 0;
   padding: 20px 0 10px;
 }
-.copyright {} 
+.copyright {}
 .copyright > p {
   color: #ddd;
   float: left;
@@ -1831,9 +1831,9 @@ ul.footer-content.box-information li a {
 #scrollUp:hover {
   background: #26acce url("img/icon/back-top.png") no-repeat scroll 0 -56px;
 }
-/*=========================== 
+/*===========================
  15. Product Modal
-============================= */   
+============================= */
 .modal { z-index: 13000 }
 #productModal .modal-dialog {
   margin: 5% auto;
@@ -2071,9 +2071,9 @@ h3.widget-title-modal{
   text-transform: uppercase;
   margin: 0;
 }
-.banner-4 .word-2 {color: #ffd535;} 
+.banner-4 .word-2 {color: #ffd535;}
 .word-5 {
-  font-size: 16px; 
+  font-size: 16px;
 }
 .banner-3 h2.word-6 {
   font-size: 20px;
@@ -2186,7 +2186,7 @@ ul.page-menu li:hover a {color: #e95668;}
 ul.page-menu > li + li::before {
   color: #ccc;
   content: "/ ";
-  padding: 0 5px;	
+  padding: 0 5px;
 }
 /*-------------------------
  20. Shop-Filter
@@ -2417,7 +2417,7 @@ background-color: #e48080;
 border-color: #e48080;
 color: #fff;
 cursor: default;
-z-index: 2;	
+z-index: 2;
 }
 .pagination ul li a:hover {
 	color: #23527c;
@@ -2431,7 +2431,7 @@ z-index: 2;
   text-align: right;
 }
 /*=========================
- 21. Product-Details Page 
+ 21. Product-Details Page
 ==========================*/
 .toch-prond-menu {}
 .toch-prond-menu ul {}
@@ -2555,10 +2555,10 @@ transition: border 0.2s ease-in-out 0s;
 }
 .toch-button:hover, .toch-button.toch-add-cart, .toch-menu ul li a:hover, .toch-menu ul li.active a:hover {
   background: #26acce none repeat scroll 0 0;
-  color: #fff;	
+  color: #fff;
 }
 .toch-button.toch-add-cart:hover {
-  background: #E95668 none repeat scroll 0 0;	
+  background: #E95668 none repeat scroll 0 0;
 }
 .toch-box { margin-top: 60px;}
 
@@ -2878,7 +2878,7 @@ blockquote {
   font-weight: 400;
   text-transform: capitalize;
 }
-/*----------------------------------- 
+/*-----------------------------------
 26. Account-Create Page
 -------------------------------------*/
 .account-create-box {
@@ -2936,4 +2936,3 @@ blockquote {
   padding: 5px 20px;
   text-transform: uppercase;
 }
-

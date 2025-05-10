@@ -59,7 +59,7 @@
 
 }
 
- 
+
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
 .container {width:750px}
@@ -173,7 +173,7 @@
 
 }
 
- 
+
 /* small mobile :320px. */
 @media (max-width: 767px) {
 .container {width:300px}
@@ -421,13 +421,13 @@ p.welcome-msg, .support-client {
   padding: 0 5px;
 }
 
- 
+
 }
- 
+
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {width:450px}
- 
+
  .search-by-category .header-search input {
   width: 310px;
 }
@@ -458,8 +458,7 @@ p.welcome-msg, .support-client {
   font-size: 14px;
   padding: 0 5px;
 }
- 
- 
- 
+
+
+
 }
- 

@@ -1,7 +1,9 @@
-from django.contrib.auth.forms import UserCreationForm as DefaultUserCreationForm
 from django.contrib.auth.forms import UserChangeForm as DefaultUserChangeForm
+from django.contrib.auth.forms import \
+    UserCreationForm as DefaultUserCreationForm
 
-from . models import User
+from .models import User
+
 
 class UserCreationForm(DefaultUserCreationForm):
     class Meta:
