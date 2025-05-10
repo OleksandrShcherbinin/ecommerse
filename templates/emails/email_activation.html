@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email activation</title>
+</head>
+<body>
+<h1>Hi {{ user.client.first_name }}</h1>
+<p>Thanks for signing up! Please follow this link to confirm tour email address</p>
+<p><a href="http://{{domain}}{% url 'activate' uid=uid token=token %}"></a>Activate your account</p>
+</body>
+</html>

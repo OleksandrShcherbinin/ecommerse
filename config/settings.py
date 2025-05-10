@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'users',
     'store',
     # third-party apps
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -137,3 +138,12 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = "users.User"
+
+SESSION_COOKIE_AGE = 609600
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = 2525
+DEFAULT_FROM_EMAIL = 'noreply@beet_veterans3.com'
