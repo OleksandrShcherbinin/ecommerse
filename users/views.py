@@ -103,5 +103,4 @@ class AccountView(LoginRequiredMixin, TemplateView):
     template_name = 'account.html'
 
     def get(self, request):
-        print(request.user)
         return super().get(request)
