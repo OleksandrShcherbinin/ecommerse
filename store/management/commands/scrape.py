@@ -1,5 +1,3 @@
-from unicodedata import category
-
 from django.core.management.base import BaseCommand, CommandError
 
 from store.services.rozetka_scraper import RozetkaParser

@@ -35,7 +35,7 @@ class Product(Timestampable):
     source_url = models.URLField(verbose_name='Source url')
     availability = models.BooleanField(default=True)
     description = models.CharField(
-        max_length=5000, verbose_name='Description',
+        max_length=10_000, verbose_name='Description',
         blank=True, default=''
     )
     old_price = models.PositiveIntegerField(
