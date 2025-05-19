@@ -1,0 +1,37 @@
+<div class="hot-deals-area carosel-circle">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="area-title">
+                <h3 class="title-group border-red gfont-1">Hot Deals</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="active-hot-deals">
+            <!-- Start Single-hot-deals -->
+            {% for product in hot_deals %}
+            <div class="col-12">
+                <div class="single-hot-deals">
+                    <div class="hot-deals-photo">
+                        <a href="{% url 'product' product.slug %}"><img src="{{ product.images.all.0.url }}" alt="Product"></a>
+                    </div>
+                    <div class="count-down">
+                        <div class="timer">
+                            <div data-countdown="2017/12/31"></div>
+                        </div>
+                    </div>
+                    <div class="hot-deals-text">
+                        <h5><a href="{% url 'product' product.slug %}" class="name-group">{{ product.title }}</a></h5>
+                        <span class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
+                        <div class="price-box">
+                            <span class="price gfont-2">{{ product.price }}</span>
+                            <span class="old-price gfont-2">{{ product.old_price }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- End Single-hot-deals -->
+        </div>
+    </div>
+</div>

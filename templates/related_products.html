@@ -1,0 +1,43 @@
+<!-- START PRODUCT-AREA -->
+<div class="product-area">
+    <div class="row">
+        <div class="col-12 col-lg-12">
+            <!-- Start Product-Menu -->
+            <div class="product-menu">
+                <div class="product-title">
+                    <h3 class="title-group-2 gfont-1">Related Products</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Product-Menu -->
+    <div class="clear"></div>
+    <!-- Start Product -->
+    <div class="product carosel-navigation">
+        <div class="row">
+            <div class="active-product-carosel">
+                <!-- Start Single-Product -->
+                {% for product in related_products %}
+                <div class="col-12">
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="{% url 'product' product.slug %}">
+                                <img class="primary-img" src="{{ product.images.all.0.url }}" alt="Product" style="max-width: 100px;">
+                            </a>
+                        </div>
+                        <div class="product-description">
+                            <h5><a href="{% url 'product' product.slug %}">{{ product.title }}</a></h5>
+                            <div class="price-box">
+                                <span class="price">{{ product.price }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- End Single-Product -->
+            </div>
+        </div>
+
+    </div>
+    <!-- End Product -->
+</div>

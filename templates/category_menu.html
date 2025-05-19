@@ -1,0 +1,57 @@
+<!-- CATEGORY-MENU-LIST START -->
+<div class="left-category-menu d-lg-block d-none">
+    <div class="left-product-cat">
+        <div class="category-heading">
+            <h2>categories</h2>
+        </div>
+        <div class="category-menu-list">
+            <ul>
+                <!-- Single menu start -->
+                {% for category in most_recent_categories %}
+                <li>
+                    <a href="{% url 'product_list' category.slug %}">{{ category.name }}</a>
+                </li>
+                {% endfor %}
+
+                <li class="arrow-plus">
+                    <a href="#">More categories</a>
+                    <!--  MEGA MENU START -->
+                    <div class="cat-left-drop-menu">
+                        {% for categ in all_other_categories %}
+                        {% if forloop.counter < 12 %}
+                        <div class="cat-left-drop-menu-left">
+                            <ul>
+                                <li><a href="{% url 'product_list' categ.slug %}">{{ categ.name }}</a></li>
+                            </ul>
+                        </div>
+                        {% endif %}
+                        {% if forloop.counter > 12 and forloop.counter < 25 %}
+                        <div class="cat-left-drop-menu-left">
+                            <ul>
+                                <li><a href="{% url 'product_list' categ.slug %}">{{ categ.name }}</a></li>
+                            </ul>
+                        </div>
+                        {% endif %}
+                        {% if forloop.counter > 25 and forloop.counter < 38 %}
+                        <div class="cat-left-drop-menu-left">
+                            <ul>
+                                <li><a href="{% url 'product_list' categ.slug %}">{{ categ.name }}</a></li>
+                            </ul>
+                        </div>
+                        {% endif %}
+                        {% if forloop.counter > 38 %}
+                        <div class="cat-left-drop-menu-left">
+                            <ul>
+                                <li><a href="{% url 'product_list' categ.slug %}">{{ categ.name }}</a></li>
+                            </ul>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                    <!-- MEGA MENU END -->
+                </li>
+                <!-- MENU ACCORDION END -->
+            </ul>
+        </div>
+    </div>
+</div>

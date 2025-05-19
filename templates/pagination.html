@@ -1,0 +1,28 @@
+{% if is_paginated %}
+<div class="pagination-area">
+    <div class="row">
+        <div class="col-5">
+            <div class="pagination">
+                <ul>
+                    {% for i in paginator.page_range %}
+                    {% if page_obj.number == i %}
+                    <li class="active"><a href="{{request.path}}?page={{ i }}">{{ i }}</a></li>
+                    {% else %}
+                    <li><a href="{{request.path}}?page={{ i }}">{{ i }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                    {% if page_obj.has_next %}
+                    <li><a href="{{request.path}}?page={{ page_obj.next_page_number }}">></a></li>
+                    {% endif %}
+                    <li><a href="{{request.path}}?page={{ paginator.num_pages }}">>|</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-7">
+            <div class="product-result">
+                <span>Showing 1 to 10 of {{ total_objects }} ({{ paginator.num_pages }} Pages)</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
